@@ -6,12 +6,6 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import Test from "../components/test"
 
-import CMS from 'netlify-cms'
-
-// Now the registry is available via the CMS object.
-CMS.registerPreviewTemplate('my-template', MyTemplate)
-
-
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
