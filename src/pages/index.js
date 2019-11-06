@@ -11,7 +11,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <h1>Hi mom</h1>
     <p>I don't have any posts here yet, but I will be adding stuff soon</p>
-    <p>We're gonna have some fun. Let's go!</p>
+    <p>We're gonna have some fun. All right - let's go!</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
       <Test />
