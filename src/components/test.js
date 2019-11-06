@@ -6,8 +6,6 @@ class test extends Component {
     render() {
         return (
             <div>
-                <h1>Hi mom</h1>
-                <Button variant="contained" color="primary">Check It Ouuuuuuut</Button>
                 <Container>
                     <p>
                         Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
