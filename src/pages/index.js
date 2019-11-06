@@ -10,9 +10,9 @@ import NewHeader from "../components/NewHeader"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <h1>Hi mom</h1>
+    <p>I don't have any posts here yet, but I will be adding stuff soon</p>
+    <p>We're gonna have some fun. Let's go!</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
       <Test />
