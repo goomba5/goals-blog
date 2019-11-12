@@ -9,6 +9,7 @@ import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
+
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
@@ -129,21 +130,45 @@ export default function PersistentDrawerLeft() {
                 </div>
                 <Divider />
                 <List>
-                    {['Home', 'Posts', 'Projects', 'Debxg'].map((text, index) => (
-                        <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                            <ListItemText primary={text} />
-                        </ListItem>
-                    ))}
+                    <ListItem button>
+                        <ListItemIcon>
+                            <ion-icon name="home"></ion-icon>
+                        </ListItemIcon>
+                        <ListItemText primary="Home" />
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemIcon>
+                            <ion-icon name="contact"></ion-icon>
+                        </ListItemIcon>
+                        <ListItemText primary="About" />
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemIcon>
+                            <ion-icon name="book"></ion-icon>
+                        </ListItemIcon>
+                        <ListItemText primary="Posts" />
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemIcon>
+                            <ion-icon name="send"></ion-icon>
+                        </ListItemIcon>
+                        <ListItemText primary="Contact" />
+                    </ListItem>
                 </List>
                 <Divider />
                 <List>
-                    {['About', 'GitHub', 'Twitter'].map((text, index) => (
-                        <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                            <ListItemText primary={text} />
-                        </ListItem>
-                    ))}
+                    <ListItem button>
+                        <ListItemIcon>
+                            <ion-icon name="logo-github"></ion-icon>
+                        </ListItemIcon>
+                        <ListItemText primary="GitHub" />
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemIcon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </ListItemIcon>
+                        <ListItemText primary="Twitter" />
+                    </ListItem>
                 </List>
             </Drawer>
         </div>
