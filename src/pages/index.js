@@ -16,7 +16,7 @@ const IndexPage = () => (
       <HomeBanner />
       <Image />
       <p>I don't have any posts here yet, but I will be adding stuff soon</p>
-      <p>We're gonna have some fun. All right - let's go!</p>
+      <p>We're gonna have some fun.</p>
       <Test />
     </div>
     <Link to="/page-2/">Go to page 2</Link>
