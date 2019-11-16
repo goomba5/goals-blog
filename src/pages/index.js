@@ -12,11 +12,11 @@ const IndexPage = () => (
   <Layout>
     {/* <NewHeader /> */}
     <SEO title="Home" />
-    <p>I don't have any posts here yet, but I will be adding stuff soon</p>
-    <p>We're gonna have some fun. All right - let's go!</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`, marginTop: `4rem` }}>
       <HomeBanner />
       <Image />
+      <p>I don't have any posts here yet, but I will be adding stuff soon</p>
+      <p>We're gonna have some fun. All right - let's go!</p>
       <Test />
     </div>
     <Link to="/page-2/">Go to page 2</Link>
