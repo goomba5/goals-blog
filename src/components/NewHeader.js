@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link, withRouter } from 'react-router-dom'
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
@@ -135,6 +136,9 @@ export default function PersistentDrawerLeft() {
                             <ion-icon name="home"></ion-icon>
                         </ListItemIcon>
                         <ListItemText primary="Home" />
+                        <Router>
+                            <Link to="/"></Link>
+                        </Router>
                     </ListItem>
                     <ListItem button>
                         <ListItemIcon>
