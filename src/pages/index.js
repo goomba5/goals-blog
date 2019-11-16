@@ -15,6 +15,7 @@ const IndexPage = () => (
     <p>I don't have any posts here yet, but I will be adding stuff soon</p>
     <p>We're gonna have some fun. All right - let's go!</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+      <HomeBanner />
       <Image />
       <Test />
     </div>
