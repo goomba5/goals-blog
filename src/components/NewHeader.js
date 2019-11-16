@@ -16,8 +16,9 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+import { GoPerson } from 'react-icons/go'
+import { MdContactMail } from 'react-icons/md'
+import { FaHome, FaBookOpen, FaGithub, FaTwitter } from 'react-icons/fa'
 
 const drawerWidth = 240;
 
@@ -132,25 +133,25 @@ export default function PersistentDrawerLeft() {
                 <List>
                     <ListItem button>
                         <ListItemIcon>
-                            <ion-icon name="home"></ion-icon>
+                            <FaHome />
                         </ListItemIcon>
                         <ListItemText primary="Home" />
                     </ListItem>
                     <ListItem button>
                         <ListItemIcon>
-                            <ion-icon name="contact"></ion-icon>
+                            <GoPerson />
                         </ListItemIcon>
                         <ListItemText primary="About" />
                     </ListItem>
                     <ListItem button>
                         <ListItemIcon>
-                            <ion-icon name="book"></ion-icon>
+                            <FaBookOpen />
                         </ListItemIcon>
                         <ListItemText primary="Posts" />
                     </ListItem>
                     <ListItem button>
                         <ListItemIcon>
-                            <ion-icon name="send"></ion-icon>
+                            <MdContactMail />
                         </ListItemIcon>
                         <ListItemText primary="Contact" />
                     </ListItem>
@@ -159,13 +160,13 @@ export default function PersistentDrawerLeft() {
                 <List>
                     <ListItem button>
                         <ListItemIcon>
-                            <ion-icon name="logo-github"></ion-icon>
+                            <FaGithub />
                         </ListItemIcon>
                         <ListItemText primary="GitHub" />
                     </ListItem>
                     <ListItem button>
                         <ListItemIcon>
-                            <ion-icon name="logo-twitter"></ion-icon>
+                            <FaTwitter />
                         </ListItemIcon>
                         <ListItemText primary="Twitter" />
                     </ListItem>
