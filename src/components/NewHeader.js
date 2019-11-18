@@ -1,5 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
+import { Link } from "gatsby";
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -91,6 +92,10 @@ export default function PersistentDrawerLeft() {
         setOpen(false);
     };
 
+    function ListItemLink(props) {
+        return <ListItem button component="a" {...props} />;
+    }
+
     return (
         <div className={classes.root}>
             <CssBaseline />
@@ -131,18 +136,22 @@ export default function PersistentDrawerLeft() {
                 </div>
                 <Divider />
                 <List>
-                    <ListItem button>
+                    <ListItemLink button>
                         <ListItemIcon>
                             <FaHome />
                         </ListItemIcon>
-                        <ListItemText primary="Home" />
-                    </ListItem>
-                    <ListItem button>
+                        <Link to="/">
+                            <ListItemText primary="Home" />
+                        </Link>
+                    </ListItemLink>
+                    <ListItemLink>
                         <ListItemIcon>
                             <GoPerson />
                         </ListItemIcon>
-                        <ListItemText primary="About" />
-                    </ListItem>
+                        <Link to="/about/">
+                            <ListItemText primary="About" />
+                        </Link>
+                    </ListItemLink>
                     <ListItem button>
                         <ListItemIcon>
                             <FaBookOpen />
@@ -158,12 +167,12 @@ export default function PersistentDrawerLeft() {
                 </List>
                 <Divider />
                 <List>
-                    <ListItem button>
+                    <ListItemLink href="https://github.com/goomba5">
                         <ListItemIcon>
                             <FaGithub />
                         </ListItemIcon>
                         <ListItemText primary="GitHub" />
-                    </ListItem>
+                    </ListItemLink>
                     <ListItem button>
                         <ListItemIcon>
                             <FaTwitter />
