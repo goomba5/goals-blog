@@ -7,7 +7,7 @@ class test extends Component {
             <div>
                 <Container>
                     <p>
-                        Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
+                        This blog will have more stuff soon!
                     </p>
                     <p>
                         Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
