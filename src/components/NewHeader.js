@@ -156,8 +156,8 @@ export default function PersistentDrawerLeft() {
                         <ListItemIcon>
                             <FaBookOpen />
                         </ListItemIcon>
-                        <Link to="/posts/">
-                            <ListItemText primary="Posts" />
+                        <Link to="/blog/">
+                            <ListItemText primary="Blog" />
                         </Link>
                     </ListItem>
                     <ListItem button>
