@@ -1,7 +1,7 @@
 import React from "react"
 import { css } from "@emotion/core"
 import Layout from "../components/layout"
-import PostsGrid from "../components/postsGrid"
+import Posts from "../components/posts"
 
 export default ({ data }) => {
     console.log(data)
@@ -16,7 +16,7 @@ export default ({ data }) => {
                 >
                     Blog Posts
         </h1>
-                <PostsGrid />
+                <Posts />
             </div>
         </Layout>
     )
