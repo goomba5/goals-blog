@@ -1,23 +1,49 @@
 import React from "react"
-import { css } from "@emotion/core"
-import Layout from "../components/layout"
-import Posts from "../components/posts"
 
-export default ({ data }) => {
-    console.log(data)
-    return (
-        <Layout>
-            <div style={{ marginBottom: `1.45rem`, marginTop: `4rem` }}>
-                <h1
-                    css={css`
-            display: inline-block;
-            border-bottom: 1px solid;
-          `}
-                >
-                    Blog Posts
-        </h1>
-                <Posts />
-            </div>
-        </Layout>
-    )
-}
+import { Link, graphql } from "gatsby"
+import Layout from "../components/layout"
+
+export const data =
+    graphql`
+        query {
+            allMarkdownRemark {
+                totalCount
+                edges {
+                    node {
+                        id
+                        wordCount{
+                            words
+                        },
+                        frontmatter {
+                            date(formatString: "MMMM DD, YYYY")
+                            title
+                            description
+          },
+          rawMarkdownBody,
+          id
+        }
+      }
+    }
+  }`
+
+const Blog = ({ data }) => (
+    <Layout>
+        < div style={{ marginBottom: `1.45em`, marginTop: `4rem` }}>
+            {
+                data.allMarkdownRemark.edges.map(({ node }) => (
+                    <Link key={node.id}>
+                        {node.frontmatter.title}{" "}
+                        <span>
+                            --- {node.frontmatter.date}
+                        </span>
+                        <p>Total number of words: {node.wordCount.words}</p>
+
+                        <p>{node.frontmatter.description}</p>
+                    </Link>
+                ))
+            }
+        </div >
+    </Layout>
+)
+
+export default Blog;
