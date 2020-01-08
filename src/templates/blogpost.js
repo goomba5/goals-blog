@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 
 const BlogPost = ({ data }) => {
     const post = data.markdownRemark;
-    console.log(post)
+
     return (
         <Layout>
             <div style={{ marginBottom: `1.45em`, marginTop: `4rem` }}>
@@ -17,9 +17,13 @@ const BlogPost = ({ data }) => {
                     {post.frontmatter.description}
                 </h2>
 
-                <h2>
+                <h3>
                     {post.frontmatter.date}
-                </h2>
+                </h3>
+
+                <h4>
+                    Word count: {post.wordCount.words}
+                </h4>
 
                 <p>
                     {post.rawMarkdownBody}
