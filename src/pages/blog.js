@@ -11,15 +11,18 @@ export const data =
                 edges {
                     node {
                         id
+                        fields{
+                            slug
+                        }
                         wordCount{
                             words
-                        },
+                        }
                         frontmatter {
                             date(formatString: "MMMM DD, YYYY")
                             title
                             description
-          },
-          rawMarkdownBody,
+          }
+          rawMarkdownBody
           id
         }
       }
@@ -28,10 +31,10 @@ export const data =
 
 const Blog = ({ data }) => (
     <Layout>
-        < div style={{ marginBottom: `1.45em`, marginTop: `4rem` }}>
+        <div style={{ marginBottom: `1.45em`, marginTop: `4rem` }}>
             {
                 data.allMarkdownRemark.edges.map(({ node }) => (
-                    <Link key={node.id}>
+                    <Link key={node.id} to={node.fields.slug}>
                         {node.frontmatter.title}{" "}
                         <span>
                             --- {node.frontmatter.date}
@@ -42,7 +45,7 @@ const Blog = ({ data }) => (
                     </Link>
                 ))
             }
-        </div >
+        </div>
     </Layout>
 )
 
