@@ -5,7 +5,9 @@ import Layout from "../components/layout"
 const Projects = () => {
     return (
         <Layout>
-            <h1>Projects</h1>
+            <div style={{ marginBottom: `1.45em`, marginTop: `4rem` }}>
+                <h1>Projects</h1>
+            </div>
         </Layout>
     )
 }

@@ -5,7 +5,9 @@ import Layout from "../components/layout"
 const Contact = () => {
     return (
         <Layout>
-            <h1>Contact</h1>
+            <div style={{ marginBottom: `1.45em`, marginTop: `4rem` }}>
+                <h1>Contact</h1>
+            </div>
         </Layout>
     )
 }
