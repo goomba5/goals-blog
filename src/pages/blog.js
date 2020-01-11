@@ -32,6 +32,7 @@ export const data =
 const Blog = ({ data }) => (
     <Layout>
         <div style={{ marginBottom: `1.45em`, marginTop: `4rem` }}>
+            <h1>Blog Posts</h1>
             {
                 data.allMarkdownRemark.edges.map(({ node }) => (
                     <Link key={node.id} to={node.fields.slug}>
