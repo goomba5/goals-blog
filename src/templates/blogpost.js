@@ -8,7 +8,7 @@ const BlogPost = ({ data }) => {
 
     return (
         <Layout>
-            <div style={{ marginBottom: `1.45em`, marginTop: `4rem` }}>
+            <div style={{ marginBottom: `1.45em`, marginTop: `4rem` }} id="top">
                 <h1>
                     {post.frontmatter.title}
                 </h1>
@@ -29,6 +29,7 @@ const BlogPost = ({ data }) => {
                     {post.rawMarkdownBody}
                 </p>
             </div>
+            <a href="#top">Back to Top</a>
         </Layout>
     )
 }
