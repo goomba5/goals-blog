@@ -1,0 +1,30 @@
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: dodgerblue;
+    border: 2px solid black;
+    position: fixed;
+    height: auto;
+    width: auto;
+    overflow: auto;
+  }
+  
+  ul.topnav li a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    float:left;
+  }
+   
+  ul.topnav li a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  ul.topnav li a:hover:not(.active) {
+    background-color: lightgrey;
+    color: white;
+  }
