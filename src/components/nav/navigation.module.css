@@ -22,7 +22,7 @@ ul.nav {
   }
   
   ul.nav li a:hover:not(.active) {
-    background-color: lightgrey;
+    background-color: black;
     color: white;
   }
   
@@ -37,5 +37,26 @@ ul.nav {
     ul.nav li a {
       float: left;
       padding: 10px;
+    }
+
+    h1.banner {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    ul.nav a {
+      text-align: center;
+      float: none;
+      width: 100%;
+    }
+
+    ul.nav li a{
+      border: 1px solid white;
+    }
+
+    h1.banner {
+      text-align: center;
+      display: block;
     }
   }
