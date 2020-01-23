@@ -2,6 +2,7 @@ import React from "react"
 
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
+import flex from "../components/blog.module.css"
 
 export const data =
     graphql`
@@ -31,15 +32,13 @@ export const data =
 
 const Blog = ({ data }) => (
     <Layout>
-        <div style={{ marginBottom: `1.45em`, marginTop: `4rem` }}>
-            <h1>Blog Posts</h1>
+        <h1>Blog Posts</h1>
+        <div style={{ marginBottom: `1.45em`, marginTop: `4rem` }} className={flex.flexContainer}>
             {
                 data.allMarkdownRemark.edges.map(({ node }) => (
-                    <Link key={node.id} to={node.fields.slug}>
-                        {node.frontmatter.title}{" "}
-                        <span>
-                            --- {node.frontmatter.date}
-                        </span>
+                    <Link key={node.id} to={node.fields.slug} className={flex.flexItem}>
+                        <h1>{node.frontmatter.title}</h1>{" "}
+                        <h3>{node.frontmatter.date}</h3>
                         <p>Total number of words: {node.wordCount.words}</p>
 
                         <p>{node.frontmatter.description}</p>
