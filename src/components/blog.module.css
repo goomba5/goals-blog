@@ -1,0 +1,29 @@
+.flexContainer {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flexContainer a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+.flexContainer a:hover{
+    color: white;
+    background-color: #4C516D;
+    
+}
+
+.flexItem {
+    border: 1px solid #4C516D;
+    border-radius: 3px;
+    box-shadow: 7px 7px 7px grey;
+    padding: 10px;
+    width: 350px;
+    height: 200px;
+}
+
