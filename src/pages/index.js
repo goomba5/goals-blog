@@ -8,7 +8,7 @@ import HomeBanner from "../components/HomeBanner"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`, marginTop: `4rem` }}>
+    <div>
       <HomeBanner />
       <p>I don't have any posts here yet, but I will be adding stuff soon</p>
       <p>We're gonna have some fun.</p>

@@ -5,7 +5,7 @@ class About extends Component {
     render() {
         return (
             <Layout>
-                <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`, marginTop: `4rem` }}>
+                <div>
                     <h1>
                         About
                 </h1>
