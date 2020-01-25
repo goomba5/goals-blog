@@ -33,11 +33,11 @@ export const data =
 const Blog = ({ data }) => (
     <Layout>
         <h1>Blog Posts</h1>
-        <div style={{ marginBottom: `1.45em`, marginTop: `4rem` }} className={flex.flexContainer}>
+        <div className={flex.flexContainer}>
             {
                 data.allMarkdownRemark.edges.map(({ node }) => (
                     <Link key={node.id} to={node.fields.slug} className={flex.flexItem}>
-                        <h1>{node.frontmatter.title}</h1>{" "}
+                        <h2>{node.frontmatter.title}</h2>{" "}
                         <h3>{node.frontmatter.date}</h3>
                         <p>Total number of words: {node.wordCount.words}</p>
 
