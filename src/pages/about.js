@@ -23,23 +23,29 @@ const About = ({ data }) => {
         <Layout>
             <div className={about.flexContainer}>
                 <div className={about.flexItem}>
-                    <h2 className={about.title}>Who I Am</h2>
+                    <h2 className={about.title}>What It Do</h2>
                     <p>
-                        Yo! My name is Gary and I am an aspiring web developer. For the past couple of years, I have been on a winding journey to learn as much as possible about all of the tools of the trade, and to collect as many experiences as possible. This path has required a lot of time, practice, patience, and, most importantly, persistence. At the core of each experience - especially those in the future - there are two things I always make sure of, and those are to have fun and enjoy yourself.
+                        Yo! If you are reading this, then congratulations on finding my site - it's not out in the open, that's for sure. With that being said, my name is Gary and I made this site using Gatsby and Netlify CMS.
+            </p>
+                    <p>
+                        This blog site was made for one purpose and one purpose only: I want to practice. This is a good place to continue sharpening my skills with JavaScript, HTML/CSS and React, as well as the opportunity to write about those experiences. The takeaway from this is to describe an experience, analyze it, and then reflect. Hopefully all of that sounds okay.
             </p>
                 </div>
 
                 <div className={about.flexItem}>
                     <h2 className={about.title}>Where I've Been</h2>
                     <p>
-                        My name is Gary and I have been a part of Zillow Group for over four years. Prior to my current job, I have been: a logistics team member for a major retailer, a
+                        Prior to where I currently work, I was able to work in a number of different roles with varying degrees of responsibilities. I've worked in retail logistics, as a backline cook for a local restaurant, a sales associate and store manager, as well as a service coordinator overseeing technicians who fixed high-end dental equipment. My path has zigged and zagged and culminated in where I am and where I want to go.
             </p>
                 </div>
 
                 <div className={about.flexItem}>
                     <h2 className={about.title}>Where I'm Going</h2>
                     <p>
-                        My name is Gary and I have been a part of Zillow Group for over four years. Prior to my current job, I have been: a logistics team member for a major retailer, a
+                        For the past three years, I have been on a journey to completely reset my career from customer service to software development. This path has required a lot of time, practice, patience, and persistence. The journey has had its low points, but I can say with absolute confidence that it has been more than rewarding.
+            </p>
+                    <p>
+                        The people I work with are the best group of coworkers and friends you can find. Truthfully, I want to stay here and grow among them.
             </p>
                 </div>
             </div>
