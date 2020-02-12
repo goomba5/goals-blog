@@ -1,8 +1,7 @@
 .flexContainer {
     display: flex;
     align-content: center;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
+    flex-flow: row-reverse;
     justify-content: space-around;
 }
 
@@ -21,7 +20,7 @@
 .flexItem {
     border: 1px solid #4C516D;
     border-radius: 3px;
-    box-shadow: 7px 7px 7px grey;
+    box-shadow: 7px 7px grey;
     padding: 10px;
     width: 350px;
     height: 200px;
@@ -31,10 +30,11 @@
     .flexContainer {
         justify-content: space-between;
         flex-direction: column-reverse;
+        align-items: center;
     }
 
     .flexItem {
-        margin: 5px;
+        margin: 7px;
         width:85%;
     }
 }
@@ -43,11 +43,12 @@
     .flexContainer {
         justify-content: space-between;
         flex-direction: column-reverse;
+        align-items: center;
     }
 
     .flexItem {
-        margin: 5px;
-        width:75%;
+        margin: 7px;
+        width:85%;
     }
 }
 
