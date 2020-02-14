@@ -2,10 +2,6 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.topBox {
-    height: 100px;
-}
-
 .homeFlexContainer {
   display: flex;
   align-items: center;
@@ -49,12 +45,6 @@ body {
   text-align: center;
   margin-bottom: 20px;
 }
-
-.image {
-  background-color: #34baef;
-  margin-top: 220px;
-}
-
 
 @media screen and (max-width: 1050px){
 
