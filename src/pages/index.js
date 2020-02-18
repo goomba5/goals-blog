@@ -1,20 +1,42 @@
 import React from 'react'
+import { Link } from "gatsby"
+import BackGround from "gatsby-background-image"
 
-import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Test from "../components/test"
-import HomeBanner from "../components/HomeBanner"
+import layout from "../components/layout.module.css"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <div>
-      <HomeBanner />
-      <p>I don't have any posts here yet, but I will be adding stuff soon</p>
-      <p>We're gonna have some fun.</p>
-      <Test />
+export const data =
+  graphql`
+  query{
+    file(relativePath: {eq:"ouch.jpg"}){
+        childImageSharp{
+            fluid {
+            ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }`
+
+const menu = [
+  { name: "Home", path: "/" },
+  { name: "About", path: "/about" },
+  { name: "Projects", path: "/projects" },
+  { name: "Blog", path: "/blog" },
+  { name: "Contact", path: "/contact" },
+]
+
+const IndexPage = ({ data }) => (
+
+  <BackGround className={layout.banner} fluid={data.file.childImageSharp.fluid}>
+    <div className={layout.content}>
+      <h1 id={layout.contentTitle} className={layout.title}>Going For Goal</h1>
+      <div className={layout.homeFlexContainer}>
+        {menu.map(menuOpt => (
+          <h2 className={layout.menuOptions}><Link key={menuOpt.name} to={menuOpt.path}>{menuOpt.name}</Link></h2>
+        ))}
+      </div>
     </div>
-  </Layout>
+  </BackGround>
 )
 
-export default IndexPage
+export default IndexPage;
