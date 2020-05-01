@@ -27,16 +27,14 @@ const menu = [
 
 const IndexPage = ({ data }) => (
 
-  <BackGround className={layout.banner} fluid={data.file.childImageSharp.fluid}>
-    <div className={layout.content}>
+    <div className={layout.menu}>
       <h1 id={layout.contentTitle} className={layout.title}>Going For Goal</h1>
-      <div className={layout.homeFlexContainer}>
+      <div className={layout.menuFlexContainer}>
         {menu.map(menuOpt => (
           <h2 className={layout.menuOptions}><Link key={menuOpt.name} to={menuOpt.path}>{menuOpt.name}</Link></h2>
         ))}
       </div>
     </div>
-  </BackGround>
 )
 
 export default IndexPage;
