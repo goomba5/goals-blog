@@ -1,40 +1,17 @@
 import React from 'react'
 import { Link } from "gatsby"
-import BackGround from "gatsby-background-image"
+import Navigation from "../components/nav/frontPageNav"
 
-import SEO from "../components/seo"
-import layout from "../components/layout.module.css"
+// **TO-DO**: Remember to import the homeStyle.module.css
+// stylesheet once it's complete.
+// Also, remember to pass the style prop to the Nav component.
 
-export const data =
-  graphql`
-  query{
-    file(relativePath: {eq:"ouch.jpg"}){
-        childImageSharp{
-            fluid {
-            ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }`
-
-const menu = [
-  { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  { name: "Projects", path: "/projects" },
-  { name: "Blog", path: "/blog" },
-  { name: "Contact", path: "/contact" },
-]
-
-const IndexPage = ({ data }) => (
-
-    <div className={layout.menu}>
-      <h1 id={layout.contentTitle} className={layout.title}>Going For Goal</h1>
-      <div className={layout.menuFlexContainer}>
-        {menu.map(menuOpt => (
-          <h2 className={layout.menuOptions}><Link key={menuOpt.name} to={menuOpt.path}>{menuOpt.name}</Link></h2>
-        ))}
-      </div>
+const IndexPage = () => {
+  return(
+    <div>
+      <Navigation />
     </div>
-)
+  )
+}
 
 export default IndexPage;
