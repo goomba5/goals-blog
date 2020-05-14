@@ -2,7 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 
 const MenuList = (props) => {
-    const menu = [{ name: "Home", path: "/" }, { name: "About", path: "/about" }, { name: "Projects", path: "/projects" }, { name: "Blog", path: "/blog" }, { name: "Contact", path: "/contact" }];
+    const menu = [
+        { name: "Home", path: "/" }, 
+        { name: "About", path: "/about" }, 
+        { name: "Projects", path: "/projects" }, 
+        { name: "Blog", path: "/blog" }, 
+        { name: "Contact", path: "/contact" }
+    ];
 
     return (
         <div>
