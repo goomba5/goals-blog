@@ -2,17 +2,11 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.menuFlexContainer {
+.menuOptionsContainer {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
-  /* background-color: #34baef; */
-}
-
-.homeFlexItem {
-  margin: 10px;
-  padding: 10px;
 }
 
 .menuOptions a{
@@ -53,6 +47,7 @@ body {
   text-align: center;
   color:black;
   margin: 0 auto;
+  border: 2px solid black;
 }
 
 @media screen and (max-width: 1050px){
