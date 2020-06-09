@@ -3,19 +3,8 @@ import { Link } from "gatsby"
 import BackGround from "gatsby-background-image"
 
 import SEO from "../components/seo"
-import layout from "../components/layout.module.css"
-
-export const data =
-  graphql`
-  query{
-    file(relativePath: {eq:"ouch.jpg"}){
-        childImageSharp{
-            fluid {
-            ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }`
+import "../../src/index.css"
+import Footer from '../components/footer/Footer';
 
 const menu = [
   { name: "Home", path: "/" },
@@ -25,18 +14,16 @@ const menu = [
   { name: "Contact", path: "/contact" },
 ]
 
-const IndexPage = ({ data }) => (
-
-  <BackGround className={layout.banner} fluid={data.file.childImageSharp.fluid}>
-    <div className={layout.content}>
-      <h1 id={layout.contentTitle} className={layout.title}>Going For Goal</h1>
-      <div className={layout.homeFlexContainer}>
-        {menu.map(menuOpt => (
-          <h2 className={layout.menuOptions}><Link key={menuOpt.name} to={menuOpt.path}>{menuOpt.name}</Link></h2>
-        ))}
-      </div>
+const IndexPage = () => (
+  <div className="home-page">
+    <h1 className="home-page__title">Going For Goal</h1>
+    <div className="home-page__menu-flex-container">
+      {menu.map(option => (
+        <h2 className="home-page__menu-options"><Link key={option.name} to={option.path}>{option.name}</Link></h2>
+      ))}
     </div>
-  </BackGround>
+    <Footer />
+  </div>
 )
 
 export default IndexPage;
