@@ -4,7 +4,9 @@ import BackGround from "gatsby-background-image"
 
 import SEO from "../components/seo"
 import "../../src/index.css"
-import Footer from '../components/footer/Footer';
+import Footer from '../components/Footer';
+import Header from "../components/Header"
+import LatestPosts from "../components/LatestPosts"
 
 const menu = [
   { name: "Home", path: "/" },
@@ -16,11 +18,11 @@ const menu = [
 
 const IndexPage = () => (
   <div className="home-page">
-    <h1 className="home-page__title">Going For Goal</h1>
-    <div className="home-page__menu-flex-container">
-      {menu.map(option => (
-        <h2 className="home-page__menu-options"><Link key={option.name} to={option.path}>{option.name}</Link></h2>
-      ))}
+    <Header />
+    <div className="home-page__middle-section">
+      <LatestPosts />
+      <h2 className="homepage__latest-posts-subtitle">Latest Posts</h2>
+      <p className="homepage__subtitle">My name is Gary and I am junior web developer focused on building accessible websites using JavaScript and React!</p>
     </div>
     <Footer />
   </div>
