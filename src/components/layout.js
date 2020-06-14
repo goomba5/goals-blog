@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Navigation from "../components/nav/navigation"
+import layoutStyles from "../components/layout.module.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -23,7 +24,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <Navigation />
+    <Navigation styles={layoutStyles} />
 
     <main>{children}</main>
 
