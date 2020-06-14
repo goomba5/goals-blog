@@ -7,46 +7,95 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* .home-page{} */
-
-.home-page__title {
-  border: 2px solid yellow;
-  /* background: linear-gradient(
-    to right, 
-    #fffdc2,
-    #fffdc2 15%,
-    #d7f0a2 15%,
-    #d7f0a2 85%,
-    #fffdc2 85%
-  ); */
+.home-page__header {
+  /* border: 2px solid yellow; */
   font-family: Helvetica, Arial, sans-serif;
-  height: 175px;
+  color: white;
+  height: 275px;
+  text-align: center;
+  background-image: url("../src/images/18ZG_Thurs-029.jpg");
+  background-size: cover;
+  background-position: 50% 30%;
+}
+
+.home-page__middle-section {
+  /* border: 2px solid blue; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 254px;
+}
+
+.homepage__latest-posts-container {
+  /* border: 1px solid black; */
+  height: 180px;
+  width: 700px;
+  position: relative;
+  bottom: 45px;
   text-align: center;
 }
 
-.home-page__menu-flex-container {
-  border: 2px solid blue;
+.homepage__latest-posts {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-  height: 334px;
+  flex-direction: row-reverse;
+  justify-content: center;
+  position: relative;
+  top: 9px;
 }
 
-.home-page__menu-options a{
-  transition: 0.15s ease-in-out;
+.homepage__post {
+  border: 2px solid black;
+  border-radius: 4px;
+  width: 30%;
+  height:160px;
+  margin-right: 13px;
+  background-color: dodgerblue;
+  transition: 0.2s;
+  box-shadow: 7px 7px grey;
+}
+
+
+.homepage__post a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
-.home-page__menu-options a:hover {
-  font-size: 38px;
-  color: royalblue;
+.homepage__post:hover, .homepage__post:hover a {
+  color: white;
+  background-color: #4C516D;
+}
+
+.homepage__post-title{
+  margin-top: 15px;
+  width: auto;
+  height: 52px;
+}
+
+.homepage__post-description {
+  margin-top: 7px;
+  font-style: italic;
+  height: 45px;
+}
+
+.homepage__post-date {
+  margin-top: 5px;
+  height: 52px;
+}
+
+.homepage__latest-posts-subtitle {
+  font-style: italic;
+  position: relative;
+  bottom: 30px;
+}
+
+.homepage__subtitle {
+  font-style: italic;
+  font-weight: bold;
 }
 
 .footer {
   border: 2px solid red;
-  height: 180px;
+  height: 160px;
   background-color: black;
   color: white;
 }
