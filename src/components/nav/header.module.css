@@ -1,0 +1,28 @@
+.navigation {
+  margin-top: 10px;
+  text-align: center;
+  /* border: 1px dashed blue; */
+}
+
+.navigation__list {
+    
+  }
+
+.navigation__listItem {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.navigation__list li a {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+
+.navigation__list a:hover {
+  font-size: 28px;
+  color: dodgerblue;
+}
