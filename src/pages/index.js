@@ -4,7 +4,7 @@ import BackGround from "gatsby-background-image"
 
 import SEO from "../components/seo"
 import "../../src/index.css"
-import Footer from '../components/Footer';
+import Footer from '../components/footer/Footer';
 import Header from "../components/Header"
 import LatestPosts from "../components/LatestPosts"
 
