@@ -19,7 +19,6 @@ body {
 }
 
 .home-page__middle-section {
-  /* border: 2px solid blue; */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -27,7 +26,6 @@ body {
 }
 
 .homepage__latest-posts-container {
-  /* border: 1px solid black; */
   height: 180px;
   width: 700px;
   position: relative;
@@ -37,7 +35,7 @@ body {
 
 .homepage__latest-posts {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: center;
   position: relative;
   top: 9px;
@@ -73,6 +71,7 @@ body {
 
 .homepage__post-description {
   margin-top: 7px;
+  padding: 5px;
   font-style: italic;
   height: 45px;
 }
@@ -94,7 +93,6 @@ body {
 }
 
 .footer {
-  border: 2px solid red;
   height: 160px;
   background-color: black;
   color: white;
