@@ -21,5 +21,5 @@ export const useLatestPosts = () => {
             }
           }`
   )
-  return allMarkdownRemark;
+  return allMarkdownRemark
 }
