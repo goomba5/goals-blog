@@ -26,3 +26,9 @@
   font-size: 28px;
   color: dodgerblue;
 }
+
+@media screen and (max-width: 450px){
+  .navigation__listItem {
+    margin-right: 15px;
+  }
+}

@@ -19,6 +19,7 @@ body {
 }
 
 .home-page__middle-section {
+  border-top: 3px solid black;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -82,12 +83,12 @@ body {
 }
 
 .homepage__latest-posts-subtitle {
-  font-style: italic;
+  /* font-style: italic; */
   position: relative;
   bottom: 30px;
 }
 
-.homepage__subtitle {
+.homepage__self-description {
   font-style: italic;
   font-weight: bold;
 }
@@ -151,11 +152,68 @@ body {
 }
 
 @media screen and (max-width: 450px){
-  .image {
+  .home-page__middle-section {
+    height: 382px;
+    border-top: 3px solid black;
+    /* background-color: black; */
+  }
+
+  .homepage__latest-posts-container {
+    width: 375px;
+    position: relative;
+    top: 20px;
+  }
+
+  .homepage__latest-posts {
+    flex-direction: column;
+    top: 25px;
+  }
+
+  .homepage__post {
+    margin-bottom: 5px;
+    height: 108px;
+    box-shadow: none;
+    width: 375px;
+    border-radius: 0;
+  }
+
+  .homepage__post-title {
+    height: 13px;
+  }
+
+  .homepage__post-description {
+    /* display: none; */
+  }
+
+  .homepage__latest-posts-subtitle {
+    border-bottom: 3px solid gray;
+    position: relative;
+    bottom: 180px;
+    font-style: italic;
+  }
+
+  .homepage__self-description {
     display: none;
   }
 
-  .homeFlexContainer {
+  .footer {
+    height: 300px;
+  }
+
+  .footer__menu-container {
     flex-direction: column;
+    justify-content: inherit;
+  }
+
+  .footer__section {
+    margin-right: 0;
+  }
+
+  .footer__section-title {
+    margin-top: 15px;
+  }
+
+  .footer__section-list-item {
+    margin-top: 10px;
   }
 }

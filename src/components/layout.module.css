@@ -23,20 +23,9 @@
       background-color: #4CAF50;
       color: white;
     }
-
-    /* @media screen and (max-width: 400px) {
-        ul.nav a {
-          text-align: center;
-          float: none;
-          width: 94%;
-        }
-    
-        ul.nav li a{
-          border: 1px solid white;
-        }
-    
-        h1.banner {
-          text-align: center;
-          display: block;
-        }
-      } */
+/* 
+@media screen and (max-width: 450px) {
+   .navigation__listItem {
+     margin-right: 10px;
+   }
+  } */
