@@ -33,7 +33,7 @@ const Footer = () => {
                 </div>
                 {/* Section 2 Testing Areas: Codesandbox.io, Repl.it */}
                 <div className="footer__section">
-                    <h2 className="footer__section-title">The Labs</h2>
+                    <h2 className="footer__section-title">Coding Labs</h2>
                     <ul className="footer__list">
                         {theLabs.map((item, index) => {
                             return <li key={index} className="footer__section-list-item"><a href={item.path}>{item.option}</a></li>
