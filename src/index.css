@@ -8,7 +8,6 @@ body {
 }
 
 .home-page__header {
-  /* border: 2px solid yellow; */
   font-family: Helvetica, Arial, sans-serif;
   color: white;
   height: 275px;
@@ -155,23 +154,21 @@ body {
   .home-page__middle-section {
     height: 382px;
     border-top: 3px solid black;
-    /* background-color: black; */
   }
 
   .homepage__latest-posts-container {
     width: 375px;
+    height: 100%;
     position: relative;
-    top: 20px;
+    bottom: 9px;
   }
 
   .homepage__latest-posts {
     flex-direction: column;
-    top: 25px;
   }
 
   .homepage__post {
-    margin-bottom: 5px;
-    height: 108px;
+    height: 127px;
     box-shadow: none;
     width: 375px;
     border-radius: 0;
@@ -181,11 +178,8 @@ body {
     height: 13px;
   }
 
-  .homepage__post-description {
-    /* display: none; */
-  }
-
   .homepage__latest-posts-subtitle {
+    display: none;
     border-bottom: 3px solid gray;
     position: relative;
     bottom: 180px;
