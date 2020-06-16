@@ -1,12 +1,7 @@
 .navigation {
   margin-top: 10px;
   text-align: center;
-  /* border: 1px dashed blue; */
 }
-
-.navigation__list {
-    
-  }
 
 .navigation__listItem {
   list-style: none;
