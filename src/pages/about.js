@@ -49,7 +49,7 @@ const About = ({ data }) => {
             </p>
                 </div>
             </div>
-            <Img className={about.image} alt="Dotloop ZG18 Group Picture" fluid={data.file.childImageSharp.fluid} />
+            {/* <Img className={about.image} alt="Dotloop ZG18 Group Picture" fluid={data.file.childImageSharp.fluid} /> */}
         </Layout >
     );
 }

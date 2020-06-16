@@ -57,6 +57,7 @@ div.body p {
 @media screen and (max-width: 450px){
     .flexContainer {
         flex-direction: column;
+        margin-top: 70px;
     }
 
     .flexItem {
