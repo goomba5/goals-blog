@@ -22,7 +22,7 @@ const IndexPage = () => (
     <div className="home-page__middle-section">
       <LatestPosts />
       <h2 className="homepage__latest-posts-subtitle">Latest Posts</h2>
-      <p className="homepage__subtitle">My name is Gary and I am junior web developer focused on building accessible websites using JavaScript and React!</p>
+      <p className="homepage__self-description">My name is Gary and I am junior web developer focused on building accessible websites using JavaScript and React!</p>
     </div>
     <Footer />
   </div>
