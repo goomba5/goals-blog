@@ -4,8 +4,8 @@ import { Link } from "gatsby"
 const Footer = () => {
     const siteLinks = [
         { option: "About", path: "/about" },
-        { option: "Blog", path: "/blog" },
         { option: "Projects", path: "/projects" },
+        { option: "Blog", path: "/blog" },
     ]
 
     const theLabs = [
