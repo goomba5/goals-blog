@@ -22,6 +22,9 @@ const About = ({ data }) => {
     return (
         <Layout>
             <div className={about.about_container}>
+                <div className={about.about__parallax}>
+                    <h2 className={about.about__parallax_title}>About Me</h2>
+                </div>
                 <div className={about.about__section}>
                     <h2 className={about.about__sectionTitle}>What It Do</h2>
                     <p>
@@ -33,7 +36,7 @@ const About = ({ data }) => {
                 </div>
 
                 <div className={about.about__section}>
-                    <h2 className={about.about__sectionTitle}>Where I've Been</h2>
+                    <h1 className={about.about__sectionTitle}>Where I've Been</h1>
                     <p>
                         Prior to where I currently work, I was able to work in a number of different roles with varying degrees of responsibilities. I've worked in retail logistics, as a backline cook for a local restaurant, a sales associate and store manager, as well as a service coordinator overseeing technicians who fixed high-end dental equipment. My path has zigged and zagged and culminated in where I am and where I want to go.
             </p>
