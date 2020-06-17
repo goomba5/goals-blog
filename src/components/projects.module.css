@@ -1,7 +1,12 @@
-.projectsPage {
-    margin-top: 90px;
-}
 
-.projects__projectsTitle{
-    font-style: italic;
+
+
+@media screen and (max-width: 450px) {
+    .projectsPage {
+        margin-top: 90px;
+    }
+    
+    .projects__projectsTitle{
+        font-style: italic;
+    }
 }
