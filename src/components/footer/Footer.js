@@ -36,7 +36,7 @@ const Footer = () => {
                     <h2 className="footer__section-title">Coding Labs</h2>
                     <ul className="footer__list">
                         {theLabs.map((item, index) => {
-                            return <li key={index} className="footer__section-list-item"><a href={item.path}>{item.option}</a></li>
+                            return <li key={index} className="footer__section-list-item"><a href={item.path} target="_blank">{item.option}</a></li>
                         })}
                     </ul>
                 </div>
@@ -45,7 +45,7 @@ const Footer = () => {
                     <h2 className="footer__section-title">Social Media</h2>
                     <ul className="footer__list">
                         {socialMedia.map((item, index) => {
-                            return <li key={index} className="footer__section-list-item footer__social-list-item"><a href={item.path}>{item.option}</a></li>
+                            return <li key={index} className="footer__section-list-item footer__social-list-item"><a href={item.path} target="_blank">{item.option}</a></li>
                         })}
                     </ul>
                 </div>
