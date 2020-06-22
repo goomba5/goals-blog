@@ -25,8 +25,8 @@ const Blog = () => {
 
     return (
         <Layout>
+            <h1 className={blogStyles.blog__title}>Blog Posts</h1>
             <div className={blogStyles.blog__post_container}>
-                <h1 className={blogStyles.blog__title}>Blog Posts</h1>
                 {
                     posts.map((post, index) => (
                         <Link key={index} to={post.node.fields.slug} className={blogStyles.blog__post}>
