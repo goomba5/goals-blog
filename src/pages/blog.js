@@ -12,7 +12,6 @@ const Blog = () => {
     const reverseEdges = () => {
         let allPosts = [];
         let edgesLength = edges.length;
-        let postLimit = 0;
         let counter = 1;
 
         while (counter <= edgesLength) {
