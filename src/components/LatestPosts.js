@@ -1,5 +1,5 @@
 import React from "react"
-import { useLatestPosts } from "../components/queries/LatestPostsQuery"
+import { useLatestPosts } from "../components/queries/PostsQuery"
 import { Link } from "gatsby"
 
 const LatestPosts = () => {
