@@ -8,7 +8,6 @@ import Posts, { useLatestPosts } from "../components/queries/PostsQuery"
 
 const Blog = () => {
     const { edges } = useLatestPosts();
-    console.log(edges);
 
     const reverseEdges = () => {
         let allPosts = [];
@@ -24,7 +23,6 @@ const Blog = () => {
     }
 
     let posts = reverseEdges();
-    console.log(posts);
 
     return (
         <Layout>
