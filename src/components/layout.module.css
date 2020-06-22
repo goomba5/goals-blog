@@ -2,6 +2,7 @@
     border-bottom: 2px solid black;
     text-align: center;
     height: 68px;
+    background-color: dodgerblue;
   }
   
   .navigation__list {
@@ -13,6 +14,7 @@
     list-style: none;
     display: inline-block;
     margin-right: 25px;
+    font-size: 18px;
   }
   
   .navigation__list li a {
@@ -23,8 +25,8 @@
     }
 
   .navigation__list li a:hover {
-      color: dodgerblue;
-      border-bottom: 3px solid dodgerblue;
+      color: white;
+      border-bottom: 3px solid white;
     }
 
 @media screen and (max-width: 450px) {
@@ -33,7 +35,6 @@
     top: 0;
     z-index: 5;
     width: 100%;
-    background-color: dodgerblue;
   }
    .navigation__listItem {
      margin-right: 15px;
@@ -42,5 +43,9 @@
    .navigation__list li a {
      transition: none;
      color: white;
+   }
+
+   .navigation__list li a:hover {
+     border: none;
    }
   }
