@@ -1,0 +1,10 @@
+.contact_page {}
+
+.contact__title{}
+
+
+@media screen and (max-width: 450px){
+    .contact_page {
+        margin-top: 66px;
+    }
+}
