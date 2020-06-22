@@ -1,17 +1,32 @@
-.about_container {
-    /* display: flex;
-    align-content: center;
-    justify-content: space-around; */
-}
+.about_container {}
 
-.about__parallax {
+.about__parallax_coding{
     height: 311px;
     width: 100%;
-    background: url("../../src/images/gelsenkirchen.jpg");
+    background: url("../../src/images/slappin_the_keys.png");
+    background-size: cover;
+    background-position: 50% 450%;
+    background-attachment: fixed;
+}
+
+.about__parallax_soccer {
+    height: 379px;
+    width: 100%;
+    background: url("../../src/images/ouch.jpg");
     background-size: cover;
     background-position: 50% 40%;
     background-attachment: fixed;
 }
+
+.about__parallax_destiny{
+    height: 379px;
+    width: 100%;
+    background: url("../../src/images/round_table.jpg");
+    background-size: cover;
+    background-position: 50% 90%;
+    background-attachment: fixed;
+}
+
 
 .about__parallax_title {
     color: white;
@@ -22,50 +37,109 @@
     font-size: 32px;
 }
 
-.about__section {
-    border: 2px solid orange;
+.about__parallax_soccer_title {
+    position: relative;
+    left: 900px;
+}
+
+.about__section_container {
+    border: 2px solid black;
     width: 100%;
     height: 310px;
-    /* box-shadow: 7px 7px grey; */
+}
+
+.about__section {
+    margin-top: 40px;
+    margin-left: 150px;
+    height: 80%;
+    width: 90%;
 }
 
 .about__sectionTitle {
-    font-family: Helvetica, Arial, sans-serif;
+    margin-top: 15px;
     text-align: center;
     font-style: italic;
+    display: none;
 }
 
-@media screen and (max-width: 1050px){
-    .flexContainer {
-        justify-content: space-between;
-        margin-bottom: 120px;
-    }
+.about__section_description {
+    height: 195px;
+    width: 50%;
+    margin-right: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: white;
 }
 
-@media screen and (max-width: 800px){
-    .flexContainer {
-        justify-content: space-between;
-        margin-bottom: 50px;
-    }
+.about__section_description p {
+    margin-bottom: 16px;
+}
 
-    .flexItem {
-        margin: 7px;
-        width:80%;
-        height: auto;
-    }
+.about__section_image {
+    height: 194px;
+    width:30%;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: white;
+    box-shadow: 7px 10px gray;
+}
+
+.about__section_coding_image {
+    background: url("../../src/images/slappin_the_keys.png");
+    background-size: contain;
+}
+
+.about__section_soccer_image {
+    margin-right: 30px;
+    background: url("../../src/images/ouch.jpg");
+    background-size: cover;
+    background-position: 50% 60%;
+}
+
+.about__section_people_image {
+    background: url("../../src/images/round_table.jpg");
+    background-size: contain;
 }
 
 @media screen and (max-width: 450px){
-    .flexContainer {
-        flex-direction: column;
-        margin-top: 70px;
+
+    .about_container {
+        margin-top: 66px;
+    }
+    
+    .about__parallax_coding, .about__parallax_soccer, .about__parallax_destiny {
+        display: none;
     }
 
-    .flexItem {
-        width: 85%;
-        margin-bottom: 10px;
-        padding: 10px;
-        box-shadow: none;
+    .about__sectionTitle {
+        display: block;
+        margin-bottom: 8px;
+        background-color: aqua;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
+    .about__section_container {
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    .about__section {
+        display: block;
+        width: 100%;
         border: none;
+        margin: 0;
+    }
+
+    .about__section_description {
+        height: 310px;
+        width: 100%;
+        margin-right: 0;
+        padding: 5px;
+    }
+
+    .about__section_coding_image, .about__section_soccer_image, .about__section_people_image {
+        display: none;
     }
 }
