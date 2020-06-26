@@ -226,7 +226,7 @@ body {
   }
 
   .footer {
-    height: 300px;
+    height: auto;
   }
 
   .footer__menu-container {
