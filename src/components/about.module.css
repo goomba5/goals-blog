@@ -101,6 +101,50 @@
     background-size: contain;
 }
 
+@media screen and (max-width: 800px){
+    .about__parallax_coding{
+        height: 260px;
+        width: 100%;
+        background: url("../../src/images/slappin_the_keys.png");
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    .about__parallax_soccer {
+        height: 379px;
+        width: 100%;
+        background: url("../../src/images/ouch.jpg");
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    
+    .about__parallax_destiny{
+        height: 379px;
+        width: 100%;
+        background: url("../../src/images/round_table.jpg");
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    .about__section {
+        margin: 20px 50px;
+    }
+
+    .about__section_container {
+        border: none;
+    }
+
+    .about__section_description {
+        width: 95%;
+        margin: 0;
+    }
+
+    .about__section_image {
+        display: none;
+    }
+
+}
+
 @media screen and (max-width: 450px){
 
     .about_container {
